@@ -1,0 +1,12 @@
+{% extends "base.njk" %}
+
+{% block body %}
+    <main>
+        <h1 style="color: red;">{{ title }}</h1>
+        <hr>
+
+        Dit is een layout voor artikels.
+
+        {{ content | safe }}
+    </main>
+{% endblock body %}

@@ -1,0 +1,11 @@
+{% extends "base.njk" %}
+
+{% block body %}
+    <main>
+        Dit is een layout voor content.
+
+        {% block article %}
+            {{ content | safe }}
+        {% endblock article %}
+    </main>
+{% endblock body %}

@@ -1,0 +1,11 @@
+{% extends "base.njk" %}
+
+{% block body %}
+    <div class="split">
+        <article class="split__column">
+            {{ content }}
+        </article>
+
+        <img class="split__column" src="/images/{{ image }}">
+    </div>
+{% endblock body %}

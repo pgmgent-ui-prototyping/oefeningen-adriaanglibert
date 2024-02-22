@@ -1,0 +1,25 @@
+{% extends "base.njk" %}
+
+{% block body %}
+    <main>
+        <section>
+            {{ title }}
+            {% block top %}{% endblock top %}
+        </section>
+
+        <section class="split">
+            <div class="split__column">
+                {% block left %}{% endblock left %}
+            </div>
+
+            <div class="split__column">
+                {% block right %}{% endblock right %}
+            </div>
+        </section>
+
+        <section>
+            {% block bottom %}{% endblock bottom %}
+        </section>
+    </main>
+
+{% endblock body %}

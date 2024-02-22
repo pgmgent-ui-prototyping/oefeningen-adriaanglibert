@@ -1,0 +1,13 @@
+body {
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+}
+
+.split {
+  display: flex;
+}
+
+.split__column {
+  width: 50%;
+  object-fit: cover;
+}

@@ -1,0 +1,14 @@
+<nav>
+    <ul>
+        {% for page in collections.pages %}
+            <li>
+                <a href="{{ page.url }}">{{ page.data.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Home</a>
+    <a href="/blog">Blog</a>
+    <a href="/contact">Contact</a>
+</nav>
+
+<hr>

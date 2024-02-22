@@ -1,2 +1,4 @@
 /node_modules
 _site
+output
+**/node_modules

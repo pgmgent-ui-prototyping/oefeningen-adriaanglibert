@@ -1,0 +1,19 @@
+{% import "components/general.njk" as c %}
+
+{% extends "content.njk" %}
+
+{% block article %}
+    <hr>
+
+    {{ main_title }}
+
+    <ul>
+        {% for project in collections[collection] %}
+            <li>
+                <a href="{{ project.url }}">{{ project.data.title }}</a>
+
+                {{ c.card(project.data.title, project.data.description) }}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock article %}

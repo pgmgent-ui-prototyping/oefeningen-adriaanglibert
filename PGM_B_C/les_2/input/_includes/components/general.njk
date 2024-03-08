@@ -1,0 +1,12 @@
+{% macro card(title, description) %}
+    <div>
+        <strong>{{ title }}</strong>
+        {% if description %}
+            <p>{{ description }}</p>
+        {% endif %}
+    </div>
+{% endmacro %}
+
+{% macro button(args) %}
+    <button>Label</button>
+{% endmacro %}

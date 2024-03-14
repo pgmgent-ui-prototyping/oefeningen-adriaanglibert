@@ -1,0 +1,62 @@
+---
+title: 'Hello PGM!'
+pageTitle: 'Home'
+age: 36
+isMale: true
+students:
+    - Mark
+    - John
+    - Doe
+    - Elias
+cars:
+    - name: 'BMW'
+      model: 'X5'
+      color: 'black'
+    - name: 'Audi'
+      model: 'A6'
+      color: 'white'
+    - model: 'C8'
+---
+
+{% extends "layouts/base.njk" %}
+
+{% block body %}
+    Homepagina!
+{% endblock body %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="/assets/style.css">
+    </head>
+    <body>
+        {{ title }}
+        {{ 2 * 6 }}
+
+        <ul>
+            {% for student in students %}
+                <li>{{ student }}</li>
+            {% endfor %}
+        </ul>
+
+        {{ "mathias" | capitalize }}
+        {{ cars | length }}
+
+        {% if cars | length %}
+            <h2>Cars</h2>
+
+            <ul>
+                {% for car in cars %}
+                    {% if car.name %}
+                        <li>
+                            {{ car.name }}
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </body>
+</html>

@@ -1,0 +1,15 @@
+{% extends "layouts/base.njk" %}
+
+{% block body %}
+    <nav>Navigatie!</nav>
+
+    <main>
+        {% block main %}
+            Dit is mijn standaard inhoud van main.
+        {% endblock main %}
+    </main>
+
+    <footer>
+        Footer
+    </footer>
+{% endblock body %}

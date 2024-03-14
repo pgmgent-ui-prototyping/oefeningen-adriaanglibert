@@ -1,18 +1,12 @@
 ---
-title: 'Hello PGM!'
+title: PGM
+description: Welkom bij PGM!
+image: 'computer.jpg'
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="/assets/style.css">
-    </head>
-    <body>
-        {{ title }}
-        {{ 2 * 6 }}
+{% extends "layouts/grid.njk" %}
 
-    </body>
-</html>
+{% block left %}
+    <h2>Titel</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, autem! Laboriosam odit, voluptatum necessitatibus voluptatibus, ut nesciunt ratione aut deserunt amet id velit cupiditate mollitia eligendi voluptas ullam libero natus.</p>
+{% endblock left %}

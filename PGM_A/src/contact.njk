@@ -1,16 +1,17 @@
 ---
-title: 'Contact PGM!'
+title: Contact
+description: Contacteer ons voor hulp.
+link: mailto:test@test.be
+pageTitle: Contact
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="/assets/style.css">
-    </head>
-    <body>
-        {{ title }}
-    </body>
-</html>
+{% extends "layouts/grid.njk" %}
+
+{% block left %}
+    <form action="">
+        <label>
+            test
+            <input type="text">
+        </label>
+    </form>
+{% endblock left %}

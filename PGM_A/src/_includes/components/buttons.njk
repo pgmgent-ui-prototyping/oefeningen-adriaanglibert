@@ -1,0 +1,11 @@
+{% macro primary(label, link) %}
+    {% if link %}
+        <a class="btn" href="{{ link }}">
+            {{ label }}
+        </a>
+    {% else %}
+        <button class="btn">
+            {{ label }}
+        </button>
+    {% endif %}
+{% endmacro %}

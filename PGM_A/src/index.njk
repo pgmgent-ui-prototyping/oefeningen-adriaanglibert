@@ -1,12 +1,22 @@
+{% import "components/blocks.njk" as blocks %}
 ---
 title: PGM
 description: Welkom bij PGM!
 image: 'computer.jpg'
+tags: navItems
+order: 1
+pageTitle: Home
 ---
 
 {% extends "layouts/grid.njk" %}
 
 {% block top %}
+    {{ 'dit is een test' | uppercase }}
+    {{ blocks.hero('PGM', 'beschrijving') }}
+    {{ blocks.textBlock('') }}
+{% endblock top %}
+
+{% block hidden %}
     Projecten:
 
     <ul>
@@ -26,7 +36,7 @@ image: 'computer.jpg'
             </li>
         {% endfor %}
     </ul>
-{% endblock top %}
+{% endblock hidden %}
 
 {% block left %}
     <h2>Titel</h2>

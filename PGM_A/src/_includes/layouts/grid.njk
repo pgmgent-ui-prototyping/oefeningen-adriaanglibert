@@ -1,3 +1,4 @@
+{% import "components/buttons.njk" as buttons %}
 {% extends "layouts/default.njk" %}
 
 {% block main %}
@@ -8,7 +9,7 @@
                 <p>{{ description }}</p>
 
                 {% if link %}
-                    <a>Link</a>
+                    {{ buttons.primary(title, link) }}
                 {% endif %}
             </div>
         {% endblock top %}
@@ -16,9 +17,7 @@
 
     <section>
         <div>
-            {% block left %}
-
-            {% endblock left %}
+            {% block left %}{% endblock left %}
         </div>
         <div>
             <img src="{{ image }}" alt="">

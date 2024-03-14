@@ -1,8 +1,6 @@
 ---
-layout: layouts/detail.njk
 title: Native App development voor Heineken
 permalink: native-app-development-voor-heineken
-tags: projects
 ---
 
 ## Wat hebben we gedaan

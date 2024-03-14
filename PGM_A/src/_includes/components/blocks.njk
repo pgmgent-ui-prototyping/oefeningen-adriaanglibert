@@ -1,0 +1,16 @@
+{% import "components/buttons.njk" as buttons %}
+
+{% macro hero(title, description, link, label) %}
+    <div class="flex justify-center items-center">
+        <h1>{{ title }}</h1>
+        <p>{{ description }}</p>
+
+        {% if link %}
+            {{ buttons.primary(label, link) }}
+        {% endif %}
+    </div>
+{% endmacro %}
+
+{% macro textBlock(args) %}
+    
+{% endmacro %}

@@ -1,8 +1,6 @@
 ---
-layout: layouts/detail.njk
 title: Webdesign- en development voor Coca-cola
 permalink: webdesign-en-development-voor-pepsi
-tags: projects
 ---
 
 ## Wat hebben we gedaan

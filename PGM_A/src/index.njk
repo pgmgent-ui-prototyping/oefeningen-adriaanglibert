@@ -6,6 +6,28 @@ image: 'computer.jpg'
 
 {% extends "layouts/grid.njk" %}
 
+{% block top %}
+    Projecten:
+
+    <ul>
+        {% for project in collections.projects %}
+            <li>
+                <a href="{{ project.url }}">{{ project.data.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <h2>Sport</h2>
+
+    <ul>
+        {% for project in collections.sport %}
+            <li>
+                <a href="{{ project.url }}">{{ project.data.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock top %}
+
 {% block left %}
     <h2>Titel</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, autem! Laboriosam odit, voluptatum necessitatibus voluptatibus, ut nesciunt ratione aut deserunt amet id velit cupiditate mollitia eligendi voluptas ullam libero natus.</p>

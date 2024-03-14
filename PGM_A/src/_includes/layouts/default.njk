@@ -1,7 +1,7 @@
 {% extends "layouts/base.njk" %}
 
 {% block body %}
-    <nav>Navigatie!</nav>
+    {% include "partials/nav.njk" %}
 
     <main>
         {% block main %}
@@ -9,7 +9,5 @@
         {% endblock main %}
     </main>
 
-    <footer>
-        Footer
-    </footer>
+    {% include "partials/footer.njk" %}
 {% endblock body %}

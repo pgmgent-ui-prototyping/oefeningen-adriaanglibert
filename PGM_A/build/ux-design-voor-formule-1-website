@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+    </head>
+    <body>
+        
+    <nav>
+    Navigatie!
+</nav>
+
+    <main>
+        
+    <section class="banner">
+        <header class="banner__title">
+            <h1>
+                UX Design voor Formule 1 Website
+            </h1>
+        </header>
+    </section>
+
+    <section>
+        <article class="max-w-article mx-auto">
+            
+                Standaard inhoud <h2>Wat hebben we gedaan</h2>
+<p>Curabitur sed mollis sem. Proin nisi ex, viverra a magna ultricies, fringilla ullamcorper leo. Praesent fringilla augue sem, vitae tempor sapien cursus vel. Cras dolor orci, dapibus eget pulvinar et, feugiat ac dui. Sed mauris dui, viverra non hendrerit sit amet, interdum et erat. Sed urna ipsum, pharetra quis porta ac, dignissim id ligula.</p>
+
+            
+        </article>
+    </section>
+
+    </main>
+
+    <footer>
+    Footer
+</footer>
+
+    </body>
+</html>
